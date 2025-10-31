@@ -37,8 +37,8 @@ O pipeline de treinamento foi construído no Designer conectando os seguintes co
 
 3.  **`Split Data`**
     * Os dados foram divididos em dois conjuntos:
-        * Um para **treinamento** (normalmente 70% ou 80% dos dados).
-        * Um para **teste** (os 30% ou 20% restantes), usado para avaliar o modelo.
+        * Um para **treinamento**.
+        * Um para **teste**, usado para avaliar o modelo.
 
 4.  **`Linear Regression` (Algoritmo)**
     * Este é o algoritmo de machine learning escolhido. Como o objetivo é prever um valor numérico (vendas), um modelo de **Regressão Linear** foi selecionado.
@@ -59,4 +59,23 @@ O pipeline de treinamento foi construído no Designer conectando os seguintes co
 
 ## 📈 4. Resultados (Avaliação do Modelo)
 
-![Resultados do Experimento](<img width="1695" height="834" alt="Resultados" src="https://github.com/user-attachments/assets/8ac02ab8-7a10-4bf1-8c44-a75c13e4b9d4" />)
+Após a execução do pipeline, o componente `Score Model` (Pontuar Modelo) gera um novo conjunto de dados. Este conjunto inclui a `Temperatura` original, o valor real de `Vendas` e a nova coluna **`Scored Labels`**, que representa a previsão do modelo para cada linha.
+
+A imagem abaixo mostra uma visualização da saída deste componente:
+
+[<img width="1695" height="834" alt="Resultados" src="https://github.com/user-attachments/assets/8ac02ab8-7a10-4bf1-8c44-a75c13e4b9d4" />](https://github.com/Ricardonscmt/Projeto-Sorvete/blob/main/Resultados.PNG)
+
+| Temperatura | Vendas (Real) | Scored Labels (Previsto) |
+| :---: | :---: | :---: |
+| 29.1 | 310 | 308.708744 |
+| 25.0 | 258 | 250.167521 |
+| 33.2 | 374 | 367.259968 |
+| 33.7 | 378 | 374.400361 |
+
+## 📊 5. Avaliação do Modelo
+
+Por fim, o componente `Evaluate Model` compara os valores reais (`Vendas`) com os valores previstos (`Scored Labels`) para gerar as métricas de desempenho que determinam a qualidade do modelo.
+
+* **Mean Absolute Error (MAE):** `7.166286`
+* **Root Mean Squared Error (RMSE):** `8.486824`
+* **Coefficient of Determination (R²):** `0.982384`
