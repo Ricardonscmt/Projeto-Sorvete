@@ -25,7 +25,7 @@ Antes da criação do pipeline, o ambiente no Azure Machine Learning foi prepara
 
 O pipeline de treinamento foi construído no Designer conectando os seguintes componentes:
 
-![Pipeline do Azure ML Designer](estrutura.PNG)
+![Pipeline do Azure ML Designer](<img width="1343" height="698" alt="estrutura" src="https://github.com/user-attachments/assets/c4ab1602-cd89-446a-8026-089275165f23" />)
 
 ### Detalhes dos Componentes:
 
@@ -59,4 +59,4 @@ O pipeline de treinamento foi construído no Designer conectando os seguintes co
 
 ## 📈 4. Resultados (Avaliação do Modelo)
 
-![Resultados do Experimento](Resultados.PNG)
+![Resultados do Experimento](<img width="1695" height="834" alt="Resultados" src="https://github.com/user-attachments/assets/8ac02ab8-7a10-4bf1-8c44-a75c13e4b9d4" />)
