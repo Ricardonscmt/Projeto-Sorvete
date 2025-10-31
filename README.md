@@ -79,3 +79,5 @@ Por fim, o componente `Evaluate Model` compara os valores reais (`Vendas`) com o
 * **Mean Absolute Error (MAE):** `7.166286`
 * **Root Mean Squared Error (RMSE):** `8.486824`
 * **Coefficient of Determination (R²):** `0.982384`
+<img width="1558" height="755" alt="evaluetion" src="https://github.com/user-attachments/assets/d3aea12c-b019-4223-8b3d-62c7b7633f55" />
+
